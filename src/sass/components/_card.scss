@@ -1,0 +1,16 @@
+.card {
+	display: inline-block;
+	width: 35rem;
+	background-color: $color-grey-light-2;
+	border-radius: 2.4rem;
+	box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+
+	&:not(:last-child) {
+		margin-right: 10rem;
+	}
+
+
+	&__header {
+		font-size: 3rem;	
+	}
+}
