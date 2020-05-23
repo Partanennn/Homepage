@@ -1,9 +1,20 @@
 import React from 'react'
 import './css/style.css'
 import profPic from './img/prof-1.jpg'
+import cssIcon from './img/Logos/CSS.png'
+import gitIcon from './img/Logos/Git.png'
+import githubIcon from './img/Logos/GitHub.png'
+import htmlIcon from './img/Logos/html5.png'
+import javaIcon from './img/Logos/Java.png'
+import jsIcon from './img/Logos/javascript.svg'
+import mercurialIcon from './img/Logos/Mercurial.png'
+import mysqlIcon from './img/Logos/MySQL.png'
+import nodejsIcon from './img/Logos/nodejs.png'
+import postgreIcon from './img/Logos/Postgresql.png'
+import reactIcon from './img/Logos/react.svg'
+import sassIcon from './img/Logos/sasslogo.png'
 
 const App = () => {
-    console.log(profPic)
 
     return (
         <div className="App">
@@ -43,19 +54,24 @@ const App = () => {
                         <h2 className="card__header">Front-end</h2>
                         <ul className="list">
                             <div className="list__li-container">
-                                <li className="list__li">React.js</li>
+                                <img src={reactIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">React.js</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">CSS3</li>
+                                <img src={cssIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">CSS3</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">SCSS/Sass</li>
+                                <img src={sassIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">SCSS/Sass</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">HTML5</li>
+                                <img src={htmlIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">HTML5</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">Javascript</li>
+                                <img src={jsIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">Javascript</a></li>
                             </div>
                         </ul>
                     </div>
@@ -64,13 +80,16 @@ const App = () => {
                         <h2 className="card__header">Back-end</h2>
                         <ul className="list">
                             <div className="list__li-container">
-                                <li className="list__li">Node.js</li>
+                                <img src={nodejsIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">Node.js</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">PostgreSQL</li>
+                                <img src={postgreIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">PostgreSQL</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">MySQL</li>
+                                <img src={mysqlIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">MySQL</a></li>
                             </div>
                             <div className="list__li-container">
                                 <li className="list__li">&nbsp;</li>
@@ -85,16 +104,20 @@ const App = () => {
                         <h2 className="card__header">Other stuff I'm good at</h2>
                         <ul className="list">
                             <div className="list__li-container">
-                                <li className="list__li">Git</li>
+                                <img src={gitIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">Git</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">Java</li>
+                                <img src={javaIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">Java</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">Mercurial</li>
+                                <img src={mercurialIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">Mercurial</a></li>
                             </div>
                             <div className="list__li-container">
-                                <li className="list__li">Github</li>
+                                <img src={githubIcon} className="list__icon"></img>
+                                <li className="list__li"><a href="#">Github</a></li>
                             </div>
                             <div className="list__li-container">
                                 <li className="list__li">&nbsp;</li>
