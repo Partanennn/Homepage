@@ -2,16 +2,16 @@
 	list-style: none;
 	display: inline-block;
 	
+	// CONTAINER FOR TEXT AND ICON
 	&__li-container {
-		padding: 0.5rem;
-
+		padding-top: 1rem;
 	}
 
 	&__li {
 		display: inline-block;
 		padding: 1rem;
-		font-size: 1.5rem;
-		font-weight: 300;
+		font-size: 1.7rem;
+		font-weight: 400;
 
 		& a:link,
 		& a:visited {

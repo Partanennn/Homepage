@@ -13,6 +13,7 @@ import nodejsIcon from './img/Logos/nodejs.png'
 import postgreIcon from './img/Logos/Postgresql.png'
 import reactIcon from './img/Logos/react.svg'
 import sassIcon from './img/Logos/sasslogo.png'
+import linkedinIcon from './img/Logos/linkedin.png'
 
 const App = () => {
 
@@ -29,49 +30,52 @@ const App = () => {
 
             <main>
                 <section className="section section-about">
-                    <div>
-                        <h3 className="section__header section__header-about">
-                            Who am I?
-                        </h3>
+                    <h3 className="section__header section__header-about">
+                        Who am I?
+                    </h3>
 
-                        <div className="row u-margin-top-huge">
-                            <div className="col-1-2">
-                                <p className="section-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit duis. Purus in massa tempor nec feugiat nisl. Odio morbi quis commodo odio aenean sed adipiscing. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Ac tincidunt vitae semper quis lectus nulla. Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. Ipsum nunc aliquet bibendum enim facilisis. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. In metus vulputate eu scelerisque felis imperdiet proin. Mauris vitae ultricies leo integer malesuada nunc vel. Accumsan in nisl nisi scelerisque eu. Nisi porta lorem mollis aliquam ut porttitor leo. Nisl condimentum id venenatis a condimentum. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Ac auctor augue mauris augue. Ridiculus mus mauris vitae ultricies leo integer. Arcu ac tortor dignissim convallis aenean et tortor at. Auctor augue mauris augue neque gravida in.</p>
+                    <div className="row u-margin-top-huge">
+                        <div className="col-1-2">
+                            <p className="section-about__text">Hey! I'm Aleksi and I'm 3rd year computer science student. I'm going to get my bachelor done by 2021. I'm not very design driven person but I focus trying to make beautiful and understandable code that is easy to read. Javascript, css and react(hooks) are my strongest front-end tools. From back-end the strongest is Node.js. I have done few servers for school projects so I know basics of it. You can see some of my work in github.</p>
+                            <div className="section-about__social-link">
+                                <a href="https://github.com/Partanennn"><img src={githubIcon} className="section-about__social-link-git"></img></a>
+                                <a href="https://www.linkedin.com/in/aleksi-partanen-b285a1150/"><img src={linkedinIcon} className="section-about__social-link-linkedin"></img></a>
                             </div>
+                        </div>
 
-                            <div className="col-1-2">
-                                <div className="section-about__img-container">
-                                    <img src={profPic} alt="Profile photo" className="section-about__image"></img>
-                                </div>
+                        <div className="col-1-2">
+                            <div className="section-about__img-container">
+                                <img src={profPic} alt="Profile photo" className="section-about__image"></img>
                             </div>
+                            
                         </div>
                     </div>
                 </section>
                 
                 <section className="section section-skills">
-                    <h3 className="section__header u-margin-bottom-medium">My skills</h3>
+                    <h3 className="section__header m-bottom-medium section__header-skills stroke">Languages</h3>
                     <div className="card">
                         <h2 className="card__header">Front-end</h2>
                         <ul className="list">
                             <div className="list__li-container">
                                 <img src={reactIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">React.js</a></li>
+                                <li className="list__li"><a href="https://reactjs.org/docs/getting-started.html">React.js</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={cssIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">CSS3</a></li>
+                                <li className="list__li"><a href="https://devdocs.io/css/">CSS3</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={sassIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">SCSS/Sass</a></li>
+                                <li className="list__li"><a href="https://sass-lang.com/documentation">Sass</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={htmlIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">HTML5</a></li>
+                                <li className="list__li"><a href="https://devdocs.io/html/">HTML5</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={jsIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">Javascript</a></li>
+                                <li className="list__li"><a href="https://devdocs.io/javascript/">Javascript</a></li>
                             </div>
                         </ul>
                     </div>
@@ -81,15 +85,15 @@ const App = () => {
                         <ul className="list">
                             <div className="list__li-container">
                                 <img src={nodejsIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">Node.js</a></li>
+                                <li className="list__li"><a href="https://nodejs.org/en/docs/">Node.js</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={postgreIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">PostgreSQL</a></li>
+                                <li className="list__li"><a href="https://www.postgresql.org/docs/">PostgreSQL</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={mysqlIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">MySQL</a></li>
+                                <li className="list__li"><a href="https://dev.mysql.com/doc/">MySQL</a></li>
                             </div>
                             <div className="list__li-container">
                                 <li className="list__li">&nbsp;</li>
@@ -105,19 +109,19 @@ const App = () => {
                         <ul className="list">
                             <div className="list__li-container">
                                 <img src={gitIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">Git</a></li>
+                                <li className="list__li"><a href="https://git-scm.com/doc">Git</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={javaIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">Java</a></li>
+                                <li className="list__li"><a href="https://docs.oracle.com/javase/8/docs/">Java</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={mercurialIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">Mercurial</a></li>
+                                <li className="list__li"><a href="https://www.mercurial-scm.org/guide">Mercurial</a></li>
                             </div>
                             <div className="list__li-container">
                                 <img src={githubIcon} className="list__icon"></img>
-                                <li className="list__li"><a href="#">Github</a></li>
+                                <li className="list__li"><a href="https://github.com/Partanennn">Github</a></li>
                             </div>
                             <div className="list__li-container">
                                 <li className="list__li">&nbsp;</li>

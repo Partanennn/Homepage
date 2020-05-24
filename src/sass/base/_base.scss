@@ -9,6 +9,10 @@
 html {
 	// Defines 1rem = 10px
 	font-size: 62.5%;
+
+	@include screen(tab-land) {
+		font-size: 50%;
+	}
 }
 
 body {

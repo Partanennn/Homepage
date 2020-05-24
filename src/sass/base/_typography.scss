@@ -15,11 +15,14 @@ body {
 	margin-bottom: 4rem;
 
 	&--main {
-		display: block;
+		display: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		font-size: 6rem;
 		font-weight: 400;
 		letter-spacing: 2.5rem;
-		animation: bigToSmall 1.5s ease-in;
+		animation: bigToSmall 2s ease-in;
 
 	}
 	
