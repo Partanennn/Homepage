@@ -1,9 +1,8 @@
 .section {
-	height: 95vh;
+	height: 95%;
 	width: 100%;
 	text-align: center;
-	margin: 3rem 0;
-	
+
 	// SECTION HEADER CSS
 	&__header {
 		font-size: 5rem;
@@ -23,7 +22,9 @@
 
 	// SECTION ABOUT CSS
 	&-about {
-		height: 75rem;
+		height: 75%;
+		margin-bottom: 3rem;
+		padding-bottom: 10rem;
 		background-color: $color-grey-light-1;
 		-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 65%);
 		clip-path: polygon(0 10%, 50% 0 ,100% 10%, 100% 100%, 0 100%);
@@ -34,18 +35,40 @@
 			columns: 2;
 			column-rule: 1px solid $color-grey-dark;
 			column-gap: 4rem;
+
+			@include screen(tab-port-2) {
+				font-size: 1.9rem;
+				margin-left: 10rem;
+			}
+
+			@include screen(tab-port-3) {
+				margin-left: 5rem;
+			}
+
+			@include screen(tab-port-4) {
+				margin-left: 2rem;
+			}
 		}
 
 		&__img-container {
 			height: 40rem;
 			display: inline-block;
 			margin-left: 20rem;
-
+			margin-top: 2rem;
 
 			// Create element actually look like it
-			-webkit-clip-path: circle(50% at 50% 50%);
+			-webkit-clip-path: ellipse(46% 30% at 51% 46%);
 			clip-path: ellipse(46% 30% at 51% 46%);
-			//clip-path: circle(34% at 51% 45%);
+
+			@include screen(tab-port-2) {
+				margin-left: 5rem;
+				margin-top: 5rem;
+			}
+
+			@include screen(tab-port-4) {
+				
+			}
+
 		}
 
 		&__image {
@@ -58,7 +81,7 @@
 			&-git {
 				height: 8rem;
 				display: inline-block;
-				transition: all .4s ease-out;
+				transition: all .3s;
 				border-radius: 3px;
 
 				&:hover {
@@ -73,7 +96,7 @@
 				width: 13rem;
 				object-fit: cover;
 				object-position: 1px -4.3rem;
-				transition: all .4s ease-out;
+				transition: all .3s;
 				border-radius: 3px;
 
 				display: inline-block;
@@ -88,10 +111,15 @@
 				}
 			}
 		}
+
+		@include screen(tab-land) {
+			padding-bottom: 5rem;
+		}
 	}
 
 	&-skills {
 		background-color: $color-primary-dark;
-		height: 70rem;
+		height: 100%;
+		padding-bottom: 10rem;
 	}
 }

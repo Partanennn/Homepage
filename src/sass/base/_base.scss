@@ -13,8 +13,17 @@ html {
 	@include screen(tab-land) {
 		font-size: 50%;
 	}
+
+	@include screen(tab-port-2) {
+		font-size: 40%;
+	}
 }
 
 body {
 	box-sizing: border-box;
+	padding: 3rem;
+
+	@include screen(tab-port-4) {
+		padding: 0;
+	}
 }

@@ -17,4 +17,9 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
+	@include screen(tab-port-2) {
+		-webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 75%);	
+		clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 70%);	
+	}
 }

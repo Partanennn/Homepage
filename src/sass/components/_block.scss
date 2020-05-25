@@ -1,0 +1,8 @@
+// This is for handling about
+.block {
+	@include screen(tab-port-4) {
+		display: inline-block;
+		width: 60% !important;
+		margin: 0 20%;
+	}
+}

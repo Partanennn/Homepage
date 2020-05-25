@@ -1,5 +1,5 @@
 @mixin clearFix {
-	&::after {
+	&:after {
 		content: "";
 		display: table;
 		clear: both;
@@ -10,9 +10,21 @@
 	@if $breakpoint == phone {
 		@media only screen and (max-width: 37.5em) { @content }; // 600px / 16px
 	}
+	
+	@if $breakpoint == tab-port-4 {
+		@media only screen and (max-width: 41.25em) { @content }; // 624px / 16px
+	}
+
+	@if $breakpoint == tab-port-3 {
+		@media only screen and (max-width: 46.625em) { @content }; // 730px / 16px
+	}
+
+	@if $breakpoint == tab-port-2 {
+		@media only screen and (max-width: 58.25em) { @content }; // 920px / 16px
+	}
 
 	@if $breakpoint == tab-port {
-		@media only screen and (max-width: 56.25em) { @content }; // 900px / 16px
+		@media only screen and (max-width: 65.625em) { @content }; // 1050px / 16px
 	}
 
 	@if $breakpoint == tab-land {

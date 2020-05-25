@@ -13,10 +13,14 @@
 		font-size: 1.7rem;
 		font-weight: 400;
 
-		& a:link,
-		& a:visited {
-			color: $color-primary-dark;
-			text-decoration: none;
+		// & a:link,
+		// & a:visited {
+		// 	color: $color-primary-dark;
+		// 	text-decoration: none;
+		// }
+
+		@include screen(tab-port-4) {
+			font-size: 2.5rem;
 		}
 	}
 

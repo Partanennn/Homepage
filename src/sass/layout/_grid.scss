@@ -1,12 +1,16 @@
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 10rem;
+$gutter-horizontal: 9rem;
+
 .row {
 	max-width: $grid-width;
 	margin: 0 auto;		// Center block elements inside of another block element
+	@include clearFix;
 
 	&:not(:last-child) {
 		margin-bottom: $gutter-vertical;
 	}
-
-	@include clearFix;
 
 	[class^="col-"] {
 		float: left;
@@ -14,6 +18,7 @@
 		&:not(:last-child) {
 			margin-right: $gutter-horizontal;
 		}
+
 	}
 
 	.col-1-2 {
