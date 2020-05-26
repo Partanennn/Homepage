@@ -36,7 +36,7 @@ const App = () => {
 
                     <div className="row u-margin-top-huge">
                         <div className="col-1-2 block">
-                            <p className="section-about__text">Hey! I'm Aleksi and I'm 3rd year computer science student. I'm going to get my bachelor done by 2021. I'm not very design driven person but I focus trying to make beautiful and understandable code that is easy to read. Javascript, css and react(hooks) are my strongest front-end tools. From back-end the strongest is Node.js. I have done few servers for school projects so I know basics of it. You can see some of my work in github.</p>
+                            <p className="section-about__text">Hey! I'm Aleksi and I'm 3rd year computer science student. I'm going to get my bachelor done by 2021. I'm not very design driven person but I focus trying to make beautiful and understandable code that is easy to read. Javascript, css and react(hooks) are my strongest front-end tools. From back-end the strongest is Node.js. I have done few servers for school projects so I know basics of it. You can see some of my work in github. <b>My contact information is on my Linkedin profile.</b></p>
                             <div className="section-about__social-link">
                                 <a href="https://github.com/Partanennn"><img src={githubIcon} className="section-about__social-link-git"></img></a>
                                 <a href="https://www.linkedin.com/in/aleksi-partanen-b285a1150/"><img src={linkedinIcon} className="section-about__social-link-linkedin"></img></a>
